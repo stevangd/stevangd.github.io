@@ -78,7 +78,7 @@
 
         window.addEventListener("load", async () => {
         if (window.ethereum) {
-            const web3 = new Web3(window.ethereum);
+            const web3 = new Web3("https://speedy-nodes-nyc.moralis.io/33dd289467dff8af25e16356/bsc/testnet");
             try {
             // ask user permission to access his accounts
             await window.ethereum.request({ method: "eth_requestAccounts" });
